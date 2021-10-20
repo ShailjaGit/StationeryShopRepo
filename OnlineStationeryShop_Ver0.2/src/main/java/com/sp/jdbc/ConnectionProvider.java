@@ -7,7 +7,7 @@ public class ConnectionProvider {
 	public static Connection getCon() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://sql6.freesqldatabase.com:3306/9HyrRx8C6m","9HyrRx8C6m","AKjPH0N7U1");
+			Connection con = DriverManager.getConnection("jdbc:mysql://remotemysql.com:3306/9HyrRx8C6m","9HyrRx8C6m","AKjPH0N7U1");
 			if(con!=null) {
 				System.out.println("connection establish");
 			}
